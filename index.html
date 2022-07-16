@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Consultor de Músicas</title>
+</head>
+<body>
+    <div id="container" class="dlight">
+    <header>
+        <h1>Consultor de Músicas</h1>
+        <p>Insira o nome do artista e o ano de lançamento do álbuns desejado. Valor 0 busca todos os álbuns.</p>
+    </header>
+    <main>
+        <div id="input">
+        <label>Artista: <br><input type="text" placeholder="Nome Artístico" id="inp1" class="inpt"></label>
+        <label>Ano de lançamento: <br><input type="number" placeholder="Todos os anos" id="inp2" class="inpt"></label>
+
+        <div id="radio">
+        <input type="radio" id="album" name="option" value="album"  checked>
+        <label for="album">Álbuns</label>
+        <input type="radio" id="single" name="option" value="single">
+        <label for="single">Singles</label>
+        </div>
+        
+            
+        <input type="button" id="sub" value="Enviar" class="inpt">
+        <div id="result">Resultado</div>
+      </div>
+
+        
+    </main>
+    <footer>
+        <div id="mode">  
+            <h2>Modo:</h2>
+            <input type="button" id="light" value="Light" class="inpt">
+            <input type="button" id="dark" value="Dark" class="inpt">
+        </div>
+        <p>Desenvolvido por Murilo Moutinho da Silva</p>
+    </footer>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

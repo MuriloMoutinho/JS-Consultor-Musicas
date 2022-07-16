@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/*-----------------------------------------------------------*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    background-image: url("img/wp.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "h""m""f";
+    box-shadow: 0 0 1em black;
+    margin: auto;
+    width: 100vw;
+    padding: 2em;
+    border-radius: 5px;
+}
+header{
+    text-align: center;
+    padding-bottom: 2em;
+    grid-area: h;
+}
+main{
+    grid-area: m;
+}
+header h1, p{
+    padding: 0.1em;
+}
+h2{
+    font-size: 1.3em;
+    padding: 0.2em;
+    margin-top: 0.3em;
+}
+h3{
+    font-size: 2em;
+    width: 100%;
+}
+#input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inpt{
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin: 6px;
+    color: black;
+    box-shadow: 0 0 0.3em black;
+
+}
+.inpt:hover{
+    background-color: rgb(199, 199, 199);
+    padding: 10px;
+    margin: 3px;
+
+    transition: all 0.5s ;
+}
+#radio{
+    display: flex;
+    gap: 0.4em;
+    margin: 0.4em;
+}
+#result{
+    background-color: rgb(104, 148, 163);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+    
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 1em black;
+}
+img{
+    width: 10em;
+    margin: 0.5em;
+}
+.musicas{
+    background-color: rgb(73, 103, 112);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5em;
+    border-radius: 5px;
+}
+#mode{
+    margin: 0.8em;
+}
+footer{
+    text-align: center;
+    grid-area: f;
+}
+
+/*-----------------------------------------------------------*/
+
+.dlight{ 
+    background-color: rgb(75, 146, 170);
+    color: black;
+}
+.ddark{
+    background-color: rgb(96, 96, 96);
+    color: white;
+}
+
+/*-----------------------------------------------------------*/
+
+@media all and (min-width: 620px){
+    #container{
+        width: 80vw;
+}}
